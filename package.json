@@ -1,0 +1,51 @@
+{
+  "name": "advanced-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "dist/main/api",
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest --passWithNoTests --no-cache --runInBand",
+    "test:watch": "npm test -- --watch",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:coverage": "npm test -- --coverage",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielsimongianotti/advanced-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielsimongianotti/advanced-node/issues"
+  },
+  "homepage": "https://github.com/gabrielsimongianotti/advanced-node#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^16.11.9",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "lint-staged": "^12.0.3",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.5.2"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "rimraf": "^3.0.2"
+  }
+}
