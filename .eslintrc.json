@@ -3,5 +3,9 @@
   "parserOptions": {
     "project": "./tsconfig.json",
     "warnOnUnsupportedTypeScriptVersion": false
+  },
+  "rules": {
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/no-namespace": "off"
   }
 }
