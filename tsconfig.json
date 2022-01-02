@@ -15,6 +15,7 @@
       "@/tests/*": ["../tests/*"]
     },
     "strict": true,
+    "useUnknownInCatchVariables": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
