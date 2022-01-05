@@ -1,5 +1,5 @@
 export interface TokenGeneration {
-  generateToken: (params: TokenGeneration.Params) => Promise<TokenGeneration.Result>
+  generationToken: (params: TokenGeneration.Params) => Promise<TokenGeneration.Result>
 }
 
 export namespace TokenGeneration {

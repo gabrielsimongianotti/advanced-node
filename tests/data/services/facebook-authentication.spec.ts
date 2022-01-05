@@ -25,7 +25,7 @@ describe('FacebookAuthenticationService', () => {
       facebookId: 'any_fb_id'
     })
     crypto = mock()
-    crypto.generateToken.mockResolvedValue('any_generated_token')
+    crypto.generationToken.mockResolvedValue('any_generated_token')
     userAccountRepo = mock()
     userAccountRepo.load.mockResolvedValue(undefined)
     userAccountRepo.saveWithFacebook.mockResolvedValue({ id: 'any_account_id' })
@@ -70,7 +70,7 @@ describe('FacebookAuthenticationService', () => {
   it('shoul call TokenGeneration with correct params', async () => {
     await sut.perform({ token })
 
-    expect(crypto.generateToken).toHaveBeenCalledWith({
+    expect(crypto.generationToken).toHaveBeenCalledWith({
       key: 'any_account_id',
       expirationInMs: AccessToken.expirationInMs
     })
@@ -104,7 +104,7 @@ describe('FacebookAuthenticationService', () => {
   })
 
   it('shoul rethrow  if TokenGeneration', async () => {
-    crypto.generateToken.mockRejectedValueOnce(new Error('fb_error'))
+    crypto.generationToken.mockRejectedValueOnce(new Error('fb_error'))
     const promice = sut.perform({ token })
 
     await expect(promice).rejects.toThrow(new Error('fb_error'))
