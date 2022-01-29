@@ -1,17 +1,17 @@
 import { LoadFacebookUserApi } from '@/data/contracts/apis'
 import { HttpGetClient } from '@/infra/http'
 
-type AppToken ={
+type AppToken = {
   access_token: string
 }
 
-type DebugToken ={
+type DebugToken = {
   data: {
     user_id: string
   }
 }
 
-type UserInfo ={
+type UserInfo = {
   id: string
   name: string
   email: string
@@ -26,12 +26,9 @@ export class FacebookApi {
   ) { }
 
   async loadUser (params: LoadFacebookUserApi.Params): Promise<LoadFacebookUserApi.Result> {
-    const userInfo = await this.getUserInfo(params.token)
-    return {
-      facebookId: userInfo.id,
-      name: userInfo.name,
-      email: userInfo.email
-    }
+    return this.getUserInfo(params.token)
+      .then(({ id, name, email }) => ({ facebookId: id, name, email }))
+      .catch(() => undefined)
   }
 
   private async getAppToken (): Promise<AppToken> {

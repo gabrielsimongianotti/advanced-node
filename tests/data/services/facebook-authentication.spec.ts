@@ -60,10 +60,10 @@ describe('FacebookAuthenticationService', () => {
   })
 
   it('shoul call SaveFacebookRepository with correct FacebookAccount', async () => {
-    mocked(FacebookAccount).mockImplementation(jest.fn().mockImplementation(() => ({})))
+    mocked(FacebookAccount).mockImplementation(jest.fn().mockImplementation(() => ({ any: 'any' })))
     await sut.perform({ token })
 
-    expect(userAccountRepo.saveWithFacebook).toHaveBeenCalledWith({})
+    expect(userAccountRepo.saveWithFacebook).toHaveBeenCalledWith({ any: 'any' })
     expect(userAccountRepo.saveWithFacebook).toHaveBeenCalledTimes(1)
   })
 
