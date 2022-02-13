@@ -2,7 +2,7 @@ import { Request, RequestHandler, Response, NextFunction } from 'express'
 import { Controller } from '@/application/controllers'
 import { mock, MockProxy } from 'jest-mock-extended'
 import { getMockReq, getMockRes } from '@jest-mock/express'
-import { adapterExpressRoute } from '@/infra/http'
+import { adapterExpressRoute } from '@/main/adapters'
 
 describe('adapterExpressRoute', () => {
   let req: Request
