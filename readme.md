@@ -21,7 +21,7 @@ A api recebe um token de autenticação do facebook, o pega alguns dados de usua
 ### Clone este repositório
 
 ```sh
-$ git clone <https://github.com/gabrielsimongianotti/advanced-node>
+$ git clone https://github.com/gabrielsimongianotti/advanced-node
 ```
 
 </br>
