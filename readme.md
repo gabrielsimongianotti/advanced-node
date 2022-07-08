@@ -10,6 +10,8 @@ A api recebe um token de altenticação do faceboo, o pega alguns dados dados do
 
 ## Digrama do sistema
 
+![dependencies](https://user-images.githubusercontent.com/26278442/177904473-8f43f4c0-9faa-4287-bbf7-e47048c35510.png)
+
 </br>
 
 ## Como rodar o projeto
