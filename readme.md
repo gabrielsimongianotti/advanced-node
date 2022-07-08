@@ -2,13 +2,13 @@
 
 ## Descrição do Projeto
 
-Esta api é um projeto de estudo onde foi aplicado o DDD, Clean Architecture, teste unitarios e de integração.
+Esta api é um projeto de estudo onde foi aplicado o DDD, Clean Architecture, teste unitarios e teste de integração.
 
-A api recebe um token de altenticação do faceboo, o pega alguns dados dados do usuaria na api do facebook, cadastra os dados do facebook em um banco de dados postgress e retorna um token de uso interno gerado pala api advanced-node.
+A api recebe um token de autenticação do facebook, o pega alguns dados de usuario na api do facebook, cadastra os dados de usuario em um banco postgresql e retorna um token de uso interno gerado pela api advanced-node.
 
 </br>
 
-## Digrama do sistema
+## Diagrama do sistema
 
 ![dependencies](https://user-images.githubusercontent.com/26278442/177904473-8f43f4c0-9faa-4287-bbf7-e47048c35510.png)
 
