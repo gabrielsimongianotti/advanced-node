@@ -2,7 +2,7 @@
   "name": "advanced-node",
   "version": "1.0.0",
   "description": "",
-  "main": "index",
+  "main": "index.ts",
   "scripts": {
     "start": "node dist/main",
     "dev": "ts-node-dev --respawn --transpile-only --clear -r dotenv/config --inspect=0.0.0.0:9229 src/main",
