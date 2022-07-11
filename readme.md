@@ -47,7 +47,7 @@ npm install
 </br>
 
 ### Execute a aplicação em modo de desenvolvimento
-
+antes de rodar adicione o .env no projeto
 ```sh
 npm run dev
 ```
