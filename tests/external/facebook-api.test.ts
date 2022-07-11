@@ -12,11 +12,11 @@ describe('Facebook Api Integration Tests', () => {
   })
 
   it('Should return a FacebookUser if token is valid', async () => {
-    const fbUser = await sut.loadUser({ token: 'EAAH873uuuPIBAGkwFqCr5qHVi5s7wgZAQ6AyipbFSuEfZCwFNnDXWgNJLgDEHIBSlLWpYa8ISVzlNSOLWqCYgMLFLikP4ZAMuuJIEhjok97ZCVagM3FaWros49sxWSARjYGE6isl5GsjSxDtKhEV6iJ4JHsXfmNyHlEyvztbWYEpgoDDTrLTwNnebLQjxoeR02hF4EPtohKZCpHQCGOnz' })
+    const fbUser = await sut.loadUser({ token: env.facebookApi.token })
 
     expect(fbUser).toEqual({
-      facebookId: '100359959207389',
-      email: 'open_kbcsrsh_user@tfbnw.net',
+      facebookId: '102876532498041',
+      email: 'open_bypwkgn_user@tfbnw.net',
       name: 'Open Graph Test User'
     })
   })
