@@ -20,6 +20,10 @@ A api recebe um token de autenticação do facebook, o pega alguns dados de usua
 
 ### Clone este repositório
 
+
+https://user-images.githubusercontent.com/26278442/178192540-a86eee1b-6cbb-4842-bb94-7530eb0df217.mp4
+
+
 ```sh
 git clone https://github.com/gabrielsimongianotti/advanced-node
 ```
@@ -57,7 +61,7 @@ curl --request POST \
  --url http://localhost:8081/api/login/facebook \
  --header 'Content-Type: application/json' \
  --data '{
-"token": "EAAH873uuuPIBAPOO8HZAw5ZACPi5JrSM4JsBMoEvIlsWhjZB99tsPqWLs8RM8blMWxLAuKHHAnZAXmZBYdYazxZCFscM8p65nfr5Hlu1EdolWiHHCbPEwjKCSwjupkQnnPMgs5hCMZCRuNqff9UMFqgdHVCr8k35SZAv4QIEiaiDtGvlo1wIXJrwRh7ReQzSxuZCDmXW5hFwkoypMc6uxp6ZAk"
+"token": "EAAH873uuuPIBAMHnOvtN1ZC85p8TIsgWT6ncAq6yvGr1rO0BdYJTgeRnefgzdpPFWbe1qfiKg5rHNmbsZBPVEVN9P4sxQbstmrScOYpVJItUZBHmZAmsZBaClDCa3wpJreYgNmoAub8fr78ZAZBsXvZBLQAQZClN9FhJVRaE8vrmqkQSyRRtCVmrLZCITOLoeFZBds8dW1ui4QekLY2COE5Y8HW"
 }'
 ```
 
