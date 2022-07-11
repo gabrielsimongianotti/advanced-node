@@ -12,7 +12,7 @@ describe('Facebook Api Integration Tests', () => {
   })
 
   it('Should return a FacebookUser if token is valid', async () => {
-    const fbUser = await sut.loadUser({ token: 'EAAJQC7IZAIjMBAJFbEVdGeUPos3OaiOKHOqijFaDRQ8eZAacXjUPwIOSPrZCojch9WrLIdFycDAfQTtDmZCG3ihQhZBCwV8aac6Im7Clbpv7oAMEaF8Fj9r8ZBIN3q6POPIcMmqcZCP0HUp8lhljISUddZAHVJIR0azI4B1DhRBi0MNzvX7BtMuSQZBwVpRHa5bALY4qAvGZAphe7l1K95r5kf' })
+    const fbUser = await sut.loadUser({ token: 'EAAH873uuuPIBAGkwFqCr5qHVi5s7wgZAQ6AyipbFSuEfZCwFNnDXWgNJLgDEHIBSlLWpYa8ISVzlNSOLWqCYgMLFLikP4ZAMuuJIEhjok97ZCVagM3FaWros49sxWSARjYGE6isl5GsjSxDtKhEV6iJ4JHsXfmNyHlEyvztbWYEpgoDDTrLTwNnebLQjxoeR02hF4EPtohKZCpHQCGOnz' })
 
     expect(fbUser).toEqual({
       facebookId: '100359959207389',
