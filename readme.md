@@ -57,6 +57,34 @@ curl --request POST \
  --url http://localhost:8081/api/login/facebook \
  --header 'Content-Type: application/json' \
  --data '{
-"token": "EAAJQC7IZAIjMBAJTHUUe5oQ1vv6gPRmzRqY8KsYw3PDdtnoZAEk8wSlZC5PVQOZCvKu1yRBAErFgrazCsSZCYje4Y7LBZA8vrMMgwHtWvYkYxcie5ciyiQeNocWdCPVu1PlXl3qeslgx5kZBZC6V88IanE70ZC95uZA3HDrsdt71ZBVcs794p3AGnzavnAMoiQmy5bvxqtHFR341URul76ZCNIxW"
+"token": "EAAH873uuuPIBAPOO8HZAw5ZACPi5JrSM4JsBMoEvIlsWhjZB99tsPqWLs8RM8blMWxLAuKHHAnZAXmZBYdYazxZCFscM8p65nfr5Hlu1EdolWiHHCbPEwjKCSwjupkQnnPMgs5hCMZCRuNqff9UMFqgdHVCr8k35SZAv4QIEiaiDtGvlo1wIXJrwRh7ReQzSxuZCDmXW5hFwkoypMc6uxp6ZAk"
 }'
+```
+
+</br>
+
+## Testes
+
+os teste pegam 100% da aplicação
+
+</br>
+
+### Testes unitarios
+
+```sh
+npm run test
+```
+</br>
+
+### Relatorio do coverage
+
+```sh
+npm run test:coverage
+```
+</br>
+
+### Testes integração
+
+```sh
+npm run test:fb-api
 ```
