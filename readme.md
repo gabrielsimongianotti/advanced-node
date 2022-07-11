@@ -54,19 +54,6 @@ npm run dev
 
 </br>
 
-### codigo curl
-
-```sh
-curl --request POST \
- --url http://localhost:8081/api/login/facebook \
- --header 'Content-Type: application/json' \
- --data '{
-"token": "EAAH873uuuPIBAMHnOvtN1ZC85p8TIsgWT6ncAq6yvGr1rO0BdYJTgeRnefgzdpPFWbe1qfiKg5rHNmbsZBPVEVN9P4sxQbstmrScOYpVJItUZBHmZAmsZBaClDCa3wpJreYgNmoAub8fr78ZAZBsXvZBLQAQZClN9FhJVRaE8vrmqkQSyRRtCVmrLZCITOLoeFZBds8dW1ui4QekLY2COE5Y8HW"
-}'
-```
-
-</br>
-
 ## Testes
 
 os teste pegam 100% da aplicação
