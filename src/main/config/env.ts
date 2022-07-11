@@ -1,8 +1,9 @@
-export const env = {// fis isso para facilitar os teste de vcs
+export const env = {
   facebookApi: {
-    clientId: process.env.FB_CLIENT_ID ?? '559580479142130',
+    clientId: process.env.FB_CLIENT_ID ?? '',
+    token: process.env.FB_TOKEN ?? '',
     clientSecret:
-      process.env.FB_CLIENT_SECRET ?? '42f0721c774723e94d9cd844fcc075f1'
+      process.env.FB_CLIENT_SECRET ?? ''
   },
   appPort: process.env.PORT ?? '8081',
   jwtSecret: process.env.JWT_SECRET ?? 'FGSDGSDFGSDFGSDGFSD'
