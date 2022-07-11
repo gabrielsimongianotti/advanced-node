@@ -68,6 +68,9 @@ curl --request POST \
 os teste pegam 100% da aplicação
 
 </br>
+<img width="1432" alt="Captura de Tela 2022-07-11 às 01 30 08" src="https://user-images.githubusercontent.com/26278442/178191108-08cb70f1-31fc-47ea-b095-ccc357850642.png">
+
+</br>
 
 ### Testes unitarios
 
