@@ -1,1 +1,1 @@
-export * from './jet-token-generatior'
+export * from './jwt-token-handler'
